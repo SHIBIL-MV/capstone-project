@@ -1,0 +1,8 @@
+{
+    "fullName": "Mohamed Shibil",
+    "email": "shibil.test@example.com",
+    "password": "TestPass123",
+    "phone": "9876543210",
+    "dateOfBirth": "2001-05-15",
+    "bio": "Playwright automation testing"
+}

@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","23887","form registration","chromium","2026-10-17","passed","2026-10-17","","project.spec.js","",""
+"","20623","File upload","chromium","2026-10-17","passed","2026-10-17","","project.spec.js","",""
+"","19367","Invalid Login Test","chromium","2026-10-17","passed","2026-10-17","","project.spec.js","",""
+"","18920","purchasing product E2E test","chromium","2026-10-17","passed","2026-10-17","","project.spec.js","",""
+"","9097","Logout Test","chromium","2026-10-17","passed","2026-10-17","","project.spec.js","",""
