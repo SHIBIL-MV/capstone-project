@@ -53,12 +53,11 @@ test("form registration", async ({ loginpage }) => {
     }
 });
 
-test("File upload", async ({ page }) => {
+test.only("File upload", async ({ page }) => {
     const upload = new FileUpload(page);
     await upload.goto();
     const filePath =
         "D:/itachi-uchiha-moon-5120x2880-25777 (1).jpg";
-    await upload.uploadFile(filePath);
    await upload.uploadFile(filePath);
 await expect(
     page.getByText(/itachi-uchiha-moon-5120x2880-25777 \(1\)\.jpg/)).toBeVisible();
