@@ -3,6 +3,7 @@ require('dotenv').config();
 
 module.exports = defineConfig({
     testDir: './tests',
+     fullyParallel: true,
 
     use: {
         baseURL: process.env.BASE_URL,

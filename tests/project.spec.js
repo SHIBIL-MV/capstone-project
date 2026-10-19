@@ -37,8 +37,6 @@ test("form registration", async ({ loginpage }) => {
         "Sheet1"
     );
     for (const data of registrationData) {
-        console.log("DOB value:", data.dateOfBirth);
-        console.log("DOB type:", typeof data.dateOfBirth);
         const form = new FormFilling(page);
         await form.fillRegistrationForm(
             data.fullName,
