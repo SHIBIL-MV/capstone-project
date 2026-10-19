@@ -1,23 +1,35 @@
+
 const { defineConfig, devices } = require('@playwright/test');
 require('dotenv').config();
 
 module.exports = defineConfig({
     testDir: './tests',
-     fullyParallel: true,
+
+    fullyParallel: true,
+    timeout: 40000,
 
     use: {
         baseURL: process.env.BASE_URL,
         headless: false,
+
         screenshot: 'on',
-        trace: 'on-first-retry'
+        video: 'on',
+        trace: 'on'
     },
 
-    reporter: 'html',
+    reporter: [
+        ['html'],
+        ['allure-playwright', {
+            resultsDir: 'allure-results'
+        }]
+    ],
 
     projects: [
         {
             name: 'chromium',
-            use: { ...devices['Desktop Chrome'] }
+            use: {
+                ...devices['Desktop Chrome']
+            }
         }
     ]
 });
